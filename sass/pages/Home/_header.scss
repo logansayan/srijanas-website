@@ -1,0 +1,49 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #efefef;
+    padding: 5rem;
+    min-height: 60vh;
+    position: relative;
+    overflow: hidden;
+
+    &__left {
+        display: flex;
+        flex-direction: column;
+        gap: 20rem;
+    }
+
+    &__logo {
+        height: 20rem;
+        width: 60rem;
+    }
+
+    &__links {
+        display: flex;
+        gap: 2rem;
+    }
+
+    &__link {
+        text-decoration: none;
+        font-family: "Poppins", sans-serif;
+        font-size: 1.5rem;
+        padding: 1rem 3rem;
+        color: $color-nutral-light;
+        background-color: $color-primary-orange;
+        border-radius: 5px;
+    }
+
+    &__right {
+
+    }
+
+    &__img {
+        display: block;
+        height: 100%;
+        position: absolute;
+        right: 2rem;
+        bottom: -2rem;
+        transform: rotate(-5deg);
+    }
+}

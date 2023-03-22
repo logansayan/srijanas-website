@@ -1,0 +1,59 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Poppins:wght@300;400&display=swap");
+:root {
+  --color-primary-orange: #F26419;
+  --color-nutral-light: #fff;
+  --color-nutral-dark: #222; }
+
+:root {
+  --color-primary-orange: #F26419;
+  --color-nutral-light: #fff;
+  --color-nutral-dark: #222; }
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit; }
+
+html {
+  font-size: 62.5%; }
+
+body {
+  font-family: "Inter", sans-serif;
+  font-size: 400; }
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #efefef;
+  padding: 5rem;
+  min-height: 60vh;
+  position: relative;
+  overflow: hidden; }
+  .header__left {
+    display: flex;
+    flex-direction: column;
+    gap: 20rem; }
+  .header__logo {
+    height: 20rem;
+    width: 60rem; }
+  .header__links {
+    display: flex;
+    gap: 2rem; }
+  .header__link {
+    text-decoration: none;
+    font-family: "Poppins", sans-serif;
+    font-size: 1.5rem;
+    padding: 1rem 3rem;
+    color: #fff;
+    background-color: #F26419;
+    border-radius: 5px; }
+  .header__img {
+    display: block;
+    height: 100%;
+    position: absolute;
+    right: 2rem;
+    bottom: -2rem;
+    transform: rotate(-5deg); }
