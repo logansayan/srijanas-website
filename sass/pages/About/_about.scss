@@ -1,8 +1,8 @@
-.section-intro {
+.section__about {
 
 }
 
-.intro {
+.about {
     text-align: center;
 
     &__heading {
@@ -10,7 +10,6 @@
     }
 
     &__paragraph {
-        margin-top: 3rem;
         @include defaultMediumParagraph;
     }
 }

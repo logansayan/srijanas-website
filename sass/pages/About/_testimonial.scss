@@ -1,0 +1,47 @@
+.section__testimonial {
+
+}
+
+.testimonial {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+    &__item {
+        display: flex;
+        align-items: center;
+        gap: 2rem;
+
+        @include respond(tab-port) {
+            flex-direction: column;
+            gap: 1rem;
+            text-align: center;
+        }
+    }
+
+    &__img {
+        min-height: 15rem;
+        min-width: 15rem;
+        border: 5px double $color-nutral-dark;
+        border-radius: 50%;
+    }
+
+    &__text {
+        padding: 2rem;
+        max-width: 60rem;
+
+        @include respond(tab-port) {
+            padding: 0;
+        }
+    }
+
+    &__name {
+        font-size: 1.7rem;
+    }
+
+    &__message {
+        margin-top: 1rem;
+        @include defaultMediumParagraph;
+    }
+}
