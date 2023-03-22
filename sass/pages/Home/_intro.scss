@@ -1,0 +1,23 @@
+.section-intro {
+
+}
+
+.intro {
+    text-align: center;
+
+    &__heading {
+        color: $color-primary-orange;
+        font-size: 3rem;
+        font-weight: 300;
+
+        span {
+            font-weight: 500;
+            text-transform: uppercase;
+        }
+    }
+
+    &__paragraph {
+        margin-top: 3rem;
+        font-size: 1.5rem;
+    }
+}

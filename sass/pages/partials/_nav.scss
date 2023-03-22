@@ -1,0 +1,38 @@
+.nav {
+    background-color: $color-primary-orange;
+    padding: 2rem;
+
+    @include respond(phone) {
+        padding: 2rem 1rem;
+    }
+
+    &__links {
+        list-style: none;
+        display: flex;
+        gap: 1rem;
+        justify-content: flex-end;
+        
+        @include respond(phone) {
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+    }
+
+    &__item {
+
+    }
+
+    &__link {
+        color: $color-nutral-light;
+        text-decoration: none;
+        font-size: 1.6rem;
+        padding: .6rem 1.2rem;
+        transition: all .2s;
+
+        &:hover {
+            background-color: $color-nutral-light;
+            color: $color-nutral-dark;
+            border-radius: 2rem;
+        }
+    }
+}
