@@ -8,6 +8,10 @@
 
 html {
     font-size: 62.5%;
+
+    @include respond(tab-port) {
+        font-size: 56.25%;
+    }
 }
 
 body {
@@ -18,4 +22,8 @@ body {
 
 .section {
     padding: 5rem;
+
+    @include respond(tab-port) {
+        padding: 3rem;
+    }
 }

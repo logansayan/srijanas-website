@@ -8,22 +8,30 @@
     overflow: hidden;
     position: relative;
 
+    @include respond(tab-land) {
+        justify-content: center;
+    }
+
     &__content {
         display: flex;
         flex-direction: column;
         gap: 15rem;
         padding: 5rem;
-
     }
 
     &__logo {
         height: 20rem;
-        width: 60rem;
+        width: 50rem;
+        background-color: $color-nutral-dark;
     }
 
     &__links {
         display: flex;
         gap: 2rem;
+
+        @include respond(tab-land) {
+            justify-content: center;
+        }
     }
 
     &__link {
@@ -42,5 +50,9 @@
         right: 2rem;
         bottom: -2rem;
         transform: rotate(-5deg);
+
+        @include respond(tab-land) {
+            display: none;
+        }
     }
 }
