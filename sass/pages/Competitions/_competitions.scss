@@ -1,0 +1,50 @@
+.section-competitions {
+
+}
+
+.competitions {
+
+
+    &__heading {
+        @include defaultBigHeading;
+        text-align: center;
+    }
+
+    &__content {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        column-gap: 3rem;
+        row-gap: 5rem;
+        margin-top: 5rem;
+
+        @include respond(tab-port) {
+            grid-template-columns: repeat(2, 1fr);
+        }
+
+        @include respond(phone) {
+            grid-template-columns: 1fr;
+        }
+    }
+
+    &__item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 1rem;
+
+        &--img {
+            max-width: 8rem;
+        }
+
+        &--heading {
+            @include secondaryHeading;
+            font-weight: 500;
+            font-size: 1.8rem
+        }
+
+        &--paragraph {
+            @include defaultMediumParagraph;
+        }
+    }
+}

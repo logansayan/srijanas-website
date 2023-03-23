@@ -207,3 +207,87 @@ body {
   .testimonial__message {
     margin-top: 1rem;
     font-size: 1.5rem; }
+
+.competitions__heading {
+  color: #F26419;
+  font-size: 3rem;
+  font-weight: 300;
+  text-align: center; }
+  @media (max-width: 59.375em) {
+    .competitions__heading {
+      font-size: 2.5rem; } }
+  .competitions__heading span {
+    font-weight: 500;
+    text-transform: uppercase; }
+
+.competitions__content {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 3rem;
+  row-gap: 5rem;
+  margin-top: 5rem; }
+  @media (max-width: 59.375em) {
+    .competitions__content {
+      grid-template-columns: repeat(2, 1fr); } }
+  @media (max-width: 37.5em) {
+    .competitions__content {
+      grid-template-columns: 1fr; } }
+
+.competitions__item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 1rem; }
+  .competitions__item--img {
+    max-width: 8rem; }
+  .competitions__item--heading {
+    font-size: 2.6rem;
+    font-weight: 700;
+    color: #F26419;
+    font-weight: 500;
+    font-size: 1.8rem; }
+    @media (max-width: 59.375em) {
+      .competitions__item--heading {
+        font-size: 2.4rem; } }
+  .competitions__item--paragraph {
+    font-size: 1.5rem; }
+
+.section-faq {
+  margin-top: 5rem; }
+
+.faq {
+  padding: 3rem 0;
+  margin-top: 5rem; }
+
+.participate {
+  text-align: center; }
+  .participate__heading {
+    color: #F26419;
+    font-size: 3rem;
+    font-weight: 300; }
+    @media (max-width: 59.375em) {
+      .participate__heading {
+        font-size: 2.5rem; } }
+    .participate__heading span {
+      font-weight: 500;
+      text-transform: uppercase; }
+  .participate__paragraph {
+    font-size: 1.5rem; }
+
+.conduct {
+  margin-top: 3rem;
+  text-align: center; }
+  .conduct__heading {
+    color: #F26419;
+    font-size: 3rem;
+    font-weight: 300; }
+    @media (max-width: 59.375em) {
+      .conduct__heading {
+        font-size: 2.5rem; } }
+    .conduct__heading span {
+      font-weight: 500;
+      text-transform: uppercase; }
+  .conduct__paragraph {
+    font-size: 1.5rem;
+    width: 100%; }

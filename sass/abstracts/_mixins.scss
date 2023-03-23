@@ -13,6 +13,16 @@
     }
 }
 
+@mixin secondaryHeading {
+    font-size: 2.6rem;
+    font-weight: 700;
+    color: $color-primary-orange;
+
+    @include respond(tab-port) {
+        font-size: 2.4rem;
+    }
+}
+
 @mixin defaultMediumParagraph {
     font-size: 1.5rem;
 }
