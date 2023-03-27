@@ -61,9 +61,12 @@ body {
   .nav__link {
     color: #fff;
     text-decoration: none;
-    font-size: 1.6rem;
+    font-size: 2rem;
     padding: .6rem 1.2rem;
     transition: all .2s; }
+    @media (max-width: 59.375em) {
+      .nav__link {
+        font-size: 1.6rem; } }
     .nav__link:hover {
       background-color: #fff;
       color: #222;
@@ -71,31 +74,52 @@ body {
 
 .header {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   background-color: #efefef;
-  min-height: 60vh;
+  min-height: 90vh;
   width: 100%;
-  overflow: hidden;
-  position: relative; }
+  position: relative;
+  background-image: url("../img/Home/header/hero.png");
+  background-position: center;
+  background-size: cover; }
   @media (max-width: 75em) {
     .header {
       justify-content: center; } }
+  @media (max-width: 37.5em) {
+    .header {
+      background-position: left; } }
   .header__content {
     display: flex;
     flex-direction: column;
     gap: 15rem;
-    padding: 5rem; }
+    padding-left: 10rem; }
+    @media (max-width: 75em) {
+      .header__content {
+        gap: 10rem; } }
+    @media (max-width: 59.375em) {
+      .header__content {
+        padding-left: 5rem; } }
+    @media (max-width: 37.5em) {
+      .header__content {
+        gap: 5rem;
+        align-items: center;
+        padding: 2rem; } }
   .header__logo {
-    height: 20rem;
-    width: 50rem;
-    background-color: #222; }
+    width: 50%; }
+    @media (max-width: 59.375em) {
+      .header__logo {
+        width: 70%; } }
+    @media (max-width: 37.5em) {
+      .header__logo {
+        width: 80%; } }
   .header__links {
     display: flex;
     gap: 2rem; }
-    @media (max-width: 75em) {
+    @media (max-width: 37.5em) {
       .header__links {
-        justify-content: center; } }
+        justify-content: center;
+        gap: 1rem; } }
   .header__link {
     text-decoration: none;
     font-size: 1.5rem;
@@ -103,16 +127,9 @@ body {
     color: #fff;
     background-color: #F26419;
     border-radius: 5px; }
-  .header__img {
-    display: block;
-    height: 100%;
-    position: absolute;
-    right: 2rem;
-    bottom: -2rem;
-    transform: rotate(-5deg); }
-    @media (max-width: 75em) {
-      .header__img {
-        display: none; } }
+    @media (max-width: 37.5em) {
+      .header__link {
+        padding: 1rem 2rem; } }
 
 .vision-mission {
   display: flex;
@@ -162,6 +179,18 @@ body {
     margin-top: 3rem;
     font-size: 1.5rem; }
 
+.about-header {
+  background-color: #efefef;
+  min-height: 90vh;
+  width: 100%;
+  position: relative;
+  background-image: url("../img/About/header/hero.png");
+  background-position: center;
+  background-size: cover; }
+  @media (max-width: 75em) {
+    .about-header {
+      background-position: left; } }
+
 .about {
   text-align: center; }
   .about__heading {
@@ -207,6 +236,45 @@ body {
   .testimonial__message {
     margin-top: 1rem;
     font-size: 1.5rem; }
+
+.competitions-header {
+  background-color: #efefef;
+  min-height: 90vh;
+  background-image: url("../img/Competitions/header/hero.png");
+  background-position: center;
+  background-size: cover;
+  position: relative; }
+  @media (max-width: 75em) {
+    .competitions-header {
+      background-position: left; } }
+  @media (max-width: 37.5em) {
+    .competitions-header {
+      background-position: center;
+      background-image: url("../img/Competitions/header/hero-mobile.png"); } }
+  .competitions-header__links {
+    position: absolute;
+    left: 10rem;
+    bottom: 10rem;
+    display: flex;
+    gap: 2rem; }
+    @media (max-width: 37.5em) {
+      .competitions-header__links {
+        justify-content: center;
+        gap: 1rem;
+        left: 50%;
+        bottom: 5rem;
+        transform: translateX(-50%);
+        width: 100%; } }
+  .competitions-header__link {
+    text-decoration: none;
+    font-size: 1.5rem;
+    padding: 1rem 3rem;
+    color: #fff;
+    background-color: #F26419;
+    border-radius: 5px; }
+    @media (max-width: 37.5em) {
+      .competitions-header__link {
+        padding: 1rem 2rem; } }
 
 .competitions__heading {
   color: #F26419;

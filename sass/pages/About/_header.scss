@@ -1,0 +1,13 @@
+.about-header {
+    background-color: #efefef;
+    min-height: 90vh;
+    width: 100%;
+    position: relative;
+    background-image: url("../img/About/header/hero.png");
+    background-position: center;
+    background-size: cover;
+
+    @include respond(tab-land) {
+        background-position: left;
+    }
+}
