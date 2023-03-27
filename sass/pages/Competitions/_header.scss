@@ -1,7 +1,7 @@
 .competitions-header {
     background-color: #efefef;
     min-height: 90vh;
-    background-image: url("../img/Competitions/header/hero.png");
+    background-image: url("../img/Competitions/header/hero.jpg");
     background-position: center;
     background-size: cover;
     position: relative;
@@ -12,7 +12,7 @@
 
     @include respond(phone) {
         background-position: center;
-        background-image: url("../img/Competitions/header/hero-mobile.png");
+        background-image: url("../img/Competitions/header/hero-mobile.jpg");
     }
 
     &__content {

@@ -19,6 +19,10 @@ body {
     font-family: "Poppins", sans-serif;
     font-size: 400;
     color: $color-nutral-dark;
+
+    &::-webkit-scrollbar {
+        display: none;
+    }
 }
 
 .section {
