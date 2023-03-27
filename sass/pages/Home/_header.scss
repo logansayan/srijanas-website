@@ -66,7 +66,9 @@
         font-size: 1.5rem;
         padding: 1rem 3rem;
         color: $color-nutral-light;
-        background-color: $color-primary-orange;
+        // background-color: $color-primary-orange;
+
+        background-image: linear-gradient(#ffb032 0%, $color-primary-orange  21%);
         border-radius: 5px;
 
         @include respond(phone) {
