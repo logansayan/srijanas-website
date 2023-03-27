@@ -70,9 +70,11 @@
 
         background-image: linear-gradient(#ffb032 0%, $color-primary-orange  21%);
         border-radius: 5px;
+        text-align: center;
 
         @include respond(phone) {
             padding: 1rem 2rem;
+            font-size: 1.3rem;
         }
     }
 }

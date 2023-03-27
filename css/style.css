@@ -129,10 +129,12 @@ body {
     padding: 1rem 3rem;
     color: #fff;
     background-image: linear-gradient(#ffb032 0%, #F26419 21%);
-    border-radius: 5px; }
+    border-radius: 5px;
+    text-align: center; }
     @media (max-width: 37.5em) {
       .header__link {
-        padding: 1rem 2rem; } }
+        padding: 1rem 2rem;
+        font-size: 1.3rem; } }
 
 .vision-mission {
   display: flex;
@@ -206,7 +208,8 @@ body {
   text-align: center; }
   @media (max-width: 37.5em) {
     .about-header__link {
-      padding: 1rem 2rem; } }
+      padding: 1rem 2rem;
+      font-size: 1.3rem; } }
 
 .about {
   text-align: center; }
@@ -279,7 +282,8 @@ body {
   display: block; }
   @media (max-width: 37.5em) {
     .competitions-header__link {
-      padding: 1rem 2rem; } }
+      padding: 1rem 2rem;
+      font-size: 1.3rem; } }
 
 .competitions__heading {
   color: #F26419;
@@ -389,7 +393,8 @@ body {
   text-align: center; }
   @media (max-width: 37.5em) {
     .gallery-header__link {
-      padding: 1rem 2rem; } }
+      padding: 1rem 2rem;
+      font-size: 1.3rem; } }
 
 .gallery {
   display: grid;
