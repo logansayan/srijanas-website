@@ -68,7 +68,8 @@ body {
     transition: all .2s; }
     @media (max-width: 59.375em) {
       .nav__link {
-        font-size: 1.6rem; } }
+        font-size: 1.6rem;
+        padding: .4rem .8rem; } }
     .nav__link:hover {
       background-color: #fff;
       color: #222;
@@ -181,49 +182,31 @@ body {
     margin-top: 3rem;
     font-size: 1.5rem; }
 
-.about-header {
-  background-color: #efefef;
-  min-height: 90vh;
+.about-header__img {
   width: 100%;
-  position: relative;
-  background-image: url("../img/About/header/hero.jpg");
-  background-position: center;
-  background-size: cover; }
-  @media (max-width: 75em) {
-    .about-header {
-      background-position: left; } }
+  object-fit: contain; }
+
+.about-header__links {
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+  margin-top: 3rem;
+  flex-wrap: wrap; }
+
+.about-header__link {
+  text-decoration: none;
+  font-size: 1.5rem;
+  color: #fff;
+  border-radius: 5px;
+  background-image: linear-gradient(#ffb032 0%, #F26419 21%);
+  padding: 1rem 3rem;
+  transition: 0.5s;
+  background-size: 200% auto;
+  display: block;
+  text-align: center; }
   @media (max-width: 37.5em) {
-    .about-header {
-      background-position: center;
-      background-image: url("../img/About/header/hero-mobile.jpg"); } }
-  .about-header__links {
-    position: absolute;
-    left: 10rem;
-    bottom: 10rem;
-    display: flex;
-    gap: 2rem; }
-    @media (max-width: 37.5em) {
-      .about-header__links {
-        justify-content: center;
-        gap: 1rem;
-        left: 50%;
-        bottom: 5rem;
-        transform: translateX(-50%);
-        width: 100%; } }
-  .about-header__link {
-    text-decoration: none;
-    font-size: 1.5rem;
-    color: #fff;
-    border-radius: 5px;
-    background-image: linear-gradient(#ffb032 0%, #F26419 21%);
-    padding: 1rem 3rem;
-    transition: 0.5s;
-    background-size: 200% auto;
-    box-shadow: 0 0 20px #eee;
-    display: block; }
-    @media (max-width: 37.5em) {
-      .about-header__link {
-        padding: 1rem 2rem; } }
+    .about-header__link {
+      padding: 1rem 2rem; } }
 
 .about {
   text-align: center; }
@@ -272,48 +255,31 @@ body {
     margin-top: 1rem;
     font-size: 1.5rem; }
 
-.competitions-header {
-  background-color: #efefef;
-  min-height: 90vh;
-  background-image: url("../img/Competitions/header/hero.jpg");
-  background-position: center;
-  background-size: cover;
-  position: relative; }
-  @media (max-width: 75em) {
-    .competitions-header {
-      background-position: left; } }
+.competitions-header__img {
+  width: 100%;
+  object-fit: contain; }
+
+.competitions-header__links {
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+  margin-top: 3rem;
+  flex-wrap: wrap; }
+
+.competitions-header__link {
+  text-decoration: none;
+  font-size: 1.5rem;
+  color: #fff;
+  border-radius: 5px;
+  background-image: linear-gradient(#7e81ff 0%, #0161af 51%);
+  padding: 1rem 3rem;
+  transition: 0.5s;
+  background-size: 200% auto;
+  box-shadow: 0 0 20px #eee;
+  display: block; }
   @media (max-width: 37.5em) {
-    .competitions-header {
-      background-position: center;
-      background-image: url("../img/Competitions/header/hero-mobile.jpg"); } }
-  .competitions-header__links {
-    position: absolute;
-    left: 10rem;
-    bottom: 10rem;
-    display: flex;
-    gap: 2rem; }
-    @media (max-width: 37.5em) {
-      .competitions-header__links {
-        justify-content: center;
-        gap: 1rem;
-        left: 50%;
-        bottom: 5rem;
-        transform: translateX(-50%);
-        width: 100%; } }
-  .competitions-header__link {
-    text-decoration: none;
-    font-size: 1.5rem;
-    color: #fff;
-    border-radius: 5px;
-    background-image: linear-gradient(#7e81ff 0%, #0161af 51%);
-    padding: 1rem 3rem;
-    transition: 0.5s;
-    background-size: 200% auto;
-    box-shadow: 0 0 20px #eee;
-    display: block; }
-    @media (max-width: 37.5em) {
-      .competitions-header__link {
-        padding: 1rem 2rem; } }
+    .competitions-header__link {
+      padding: 1rem 2rem; } }
 
 .competitions__heading {
   color: #F26419;
@@ -399,49 +365,31 @@ body {
     font-size: 1.5rem;
     width: 100%; }
 
-.gallery-header {
-  background-color: #efefef;
-  min-height: 90vh;
+.gallery-header__img {
   width: 100%;
-  position: relative;
-  background-image: url("../img/Gallery/header/hero.jpg");
-  background-position: center;
-  background-size: cover; }
-  @media (max-width: 75em) {
-    .gallery-header {
-      background-position: left; } }
+  background-size: contain; }
+
+.gallery-header__links {
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+  margin-top: 3rem;
+  flex-wrap: wrap; }
+
+.gallery-header__link {
+  text-decoration: none;
+  font-size: 1.5rem;
+  color: #fff;
+  border-radius: 5px;
+  background-image: linear-gradient(#ffb032 0%, #F26419 21%);
+  padding: 1rem 3rem;
+  transition: 0.5s;
+  background-size: 200% auto;
+  display: block;
+  text-align: center; }
   @media (max-width: 37.5em) {
-    .gallery-header {
-      background-position: center;
-      background-image: url("../img/Gallery/header/hero-mobile.jpg"); } }
-  .gallery-header__links {
-    position: absolute;
-    left: 10rem;
-    bottom: 10rem;
-    display: flex;
-    gap: 2rem; }
-    @media (max-width: 37.5em) {
-      .gallery-header__links {
-        justify-content: center;
-        gap: 1rem;
-        left: 50%;
-        bottom: 5rem;
-        transform: translateX(-50%);
-        width: 100%; } }
-  .gallery-header__link {
-    text-decoration: none;
-    font-size: 1.5rem;
-    color: #fff;
-    border-radius: 5px;
-    background-image: linear-gradient(#ffb032 0%, #F26419 21%);
-    padding: 1rem 3rem;
-    transition: 0.5s;
-    background-size: 200% auto;
-    box-shadow: 0 0 20px #eee;
-    display: block; }
-    @media (max-width: 37.5em) {
-      .gallery-header__link {
-        padding: 1rem 2rem; } }
+    .gallery-header__link {
+      padding: 1rem 2rem; } }
 
 .gallery {
   display: grid;

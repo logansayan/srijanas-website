@@ -1,39 +1,16 @@
 .competitions-header {
-    background-color: #efefef;
-    min-height: 90vh;
-    background-image: url("../img/Competitions/header/hero.jpg");
-    background-position: center;
-    background-size: cover;
-    position: relative;
 
-    @include respond(tab-land) {
-        background-position: left;
-    }
-
-    @include respond(phone) {
-        background-position: center;
-        background-image: url("../img/Competitions/header/hero-mobile.jpg");
-    }
-
-    &__content {
-        
+    &__img {
+        width: 100%;
+        object-fit: contain;
     }
 
     &__links {
-        position: absolute;
-        left: 10rem;
-        bottom: 10rem;
         display: flex;
         gap: 2rem;
-
-        @include respond(phone) {
-            justify-content: center;
-            gap: 1rem;
-            left: 50%;
-            bottom: 5rem;
-            transform: translateX(-50%);
-            width: 100%;
-        }
+        justify-content: center;
+        margin-top: 3rem;
+        flex-wrap: wrap;
     }
 
     &__link {
