@@ -11,6 +11,11 @@
         background-position: left;
     }
 
+    @include respond(phone) {
+        background-position: center;
+        background-image: url("../img/About/header/hero-mobile.jpg");
+    }
+
     &__content {
         
     }

@@ -192,6 +192,10 @@ body {
   @media (max-width: 75em) {
     .about-header {
       background-position: left; } }
+  @media (max-width: 37.5em) {
+    .about-header {
+      background-position: center;
+      background-image: url("../img/About/header/hero-mobile.jpg"); } }
   .about-header__links {
     position: absolute;
     left: 10rem;
@@ -406,6 +410,10 @@ body {
   @media (max-width: 75em) {
     .gallery-header {
       background-position: left; } }
+  @media (max-width: 37.5em) {
+    .gallery-header {
+      background-position: center;
+      background-image: url("../img/Gallery/header/hero-mobile.jpg"); } }
   .gallery-header__links {
     position: absolute;
     left: 10rem;
