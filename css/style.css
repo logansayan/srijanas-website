@@ -18,6 +18,14 @@ $breakpoint argument choices:
 - tab-land
 - big-desktop
 */
+@keyframes fadeIn {
+  0% {
+    transform: translateY(5rem);
+    opacity: 0; }
+  100% {
+    transform: translateY(0);
+    opacity: 1; } }
+
 *,
 *::before,
 *::after {
@@ -35,7 +43,8 @@ body {
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
   font-size: 400;
-  color: #222; }
+  color: #222;
+  animation: fadeIn 1s ease-in; }
   body::-webkit-scrollbar {
     display: none; }
 
@@ -91,7 +100,8 @@ body {
       justify-content: center; } }
   @media (max-width: 37.5em) {
     .header {
-      background-position: left; } }
+      background-image: url("../img/Home/header/hero-mobile.jpg");
+      align-items: flex-start; } }
   .header__content {
     display: flex;
     flex-direction: column;
@@ -107,7 +117,8 @@ body {
       .header__content {
         gap: 5rem;
         align-items: center;
-        padding: 2rem; } }
+        padding: 2rem;
+        margin-top: 2rem; } }
   .header__logo {
     width: 50%; }
     @media (max-width: 59.375em) {

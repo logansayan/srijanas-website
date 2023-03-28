@@ -19,6 +19,7 @@ body {
     font-family: "Poppins", sans-serif;
     font-size: 400;
     color: $color-nutral-dark;
+    animation: fadeIn 1s ease-in;
 
     &::-webkit-scrollbar {
         display: none;
