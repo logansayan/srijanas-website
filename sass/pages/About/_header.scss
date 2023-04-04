@@ -1,46 +1,45 @@
 .about-header {
-
+    
     &__img {
         width: 100%;
-        object-fit: contain;
+        height: 100%;
     }
 
     &__links {
+        margin-top: -10%;
+        margin-left: 10%;
+        margin-bottom: 10%;
         display: flex;
-        gap: 2rem;
-        justify-content: center;
-        margin-top: 3rem;
-        flex-wrap: wrap;
-        // margin-left: 10rem;
-        // margin-top: -10rem;
+        gap: 5rem;
 
-        // @include respond(tab-land) {
-        //     margin-left: 8rem;
-        //     margin-top: -8rem;
-        // }
+        @include respond(tab-port) {
+            gap: 2rem;
+        }
 
-        // @include respond(tab-port) {
-        //     margin-left: 6rem;
-        //     margin-top: -6rem;
-        // }
+        @include respond(tab-land) {
+            gap: 1rem;
+        }
     }
 
     &__link {
         text-decoration: none;
-        font-size: 1.5rem;
+        font-size: 1.8rem;
         color: $color-nutral-light;
-        // background-color: $color-primary-orange;
         border-radius: 5px;
         background-image: linear-gradient(#ffb032 0%, $color-primary-orange  21%);
-        padding: 1rem 3rem;
+        padding: 1rem 4rem;
         transition: 0.5s;
         background-size: 200% auto;
-        display: block;
         text-align: center;
 
-        @include respond(phone) {
+        @include respond(tab-land) {
+            font-size: 1.6rem;
             padding: 1rem 2rem;
-            font-size: 1.3rem;
+        }
+
+        @include respond(phone) {
+            padding: .5rem 1rem;
+            font-size: 1.2rem;
         }
     }
 }
