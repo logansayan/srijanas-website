@@ -359,6 +359,20 @@ body {
   .competitions__item--paragraph {
     font-size: 1.5rem; }
 
+.competitions__item--benifit {
+  font-size: 1.2rem; }
+
+.participate__items {
+  margin-top: 2rem;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+  text-align: justify;
+  font-size: 1.3rem; }
+  @media (max-width: 59.375em) {
+    .participate__items {
+      grid-template-columns: 1fr; } }
+
 .section-faq {
   margin-top: 5rem; }
 

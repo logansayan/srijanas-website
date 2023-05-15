@@ -48,3 +48,24 @@
         }
     }
 }
+
+.competitions__item--benifit {
+    font-size: 1.2rem;
+}
+
+.participate {
+
+
+    &__items {
+        margin-top: 2rem;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2rem;
+        text-align: justify;
+        font-size: 1.3rem;
+
+        @include respond(tab-port) {
+            grid-template-columns: 1fr;
+        }
+    }
+}
